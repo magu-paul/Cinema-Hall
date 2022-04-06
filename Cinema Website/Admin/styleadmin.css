@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+*{font-family:'Inter',sans-serif;}    
+
+#sidenav
+   {
+        background-color:#ffffff;
+        width:200px;
+        height:100%;
+        position: fixed;
+        z-index: 1;
+        box-shadow:6px 1px 20px rgba(69, 65, 78, 0.1);
+        top:0;
+        left:0;
+        border-right: 1px solid #eee;
+        overflow-x:hidden;
+    }
+	
+	#links
+	{
+		list-style:none;
+		padding:0;
+    margin:0;	
+    align-items: center;	
+	}
+
+  #active{
+    transition:0.3s ease;
+    font-size: 25px;
+    color:black;
+    border-bottom: 1.5px solid #eee;
+    padding:20px 20px 20px 15px;
+    margin-bottom: 20px;
+    font-family: 'Fredoka', sans-serif;
+    border-left:#007bff 3px solid;
+}
+
+li i{font-size:16px;margin-right:10px;}
+
+#active i{
+    color:#007bff;
+}
+
+#logout{
+  color:red;
+}
+
+#logout:hover{
+  text-decoration: underline;
+}
+	
+	li a
+	{
+		display:block;
+		color:#83848a;
+		font-size:16px;
+    font-weight:600;
+		text-decoration:none;
+		padding:15px 20px;
+	}
+	
+  li a:hover
+	{
+	color:#3b7ddd;
+  transition:0.3s ease;
+	}
+
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  @media screen and (max-width: 700px) {
+    #sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    #sidenav a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+
+  @media screen and (max-width: 400px) {
+    #sidenav a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .cardBox{
+    position: relative;
+    margin:0 auto;
+    width: 70%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    color: black;
+  }
+
+  .cardBox_chart{
+    position: relative;
+    margin:0 auto;
+    width: 70%;
+    padding: 0px;
+    display: grid;
+    height:300px;
+    border-radius: 20px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .cardBox_chart .card_chart{
+    border-radius: 20px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    background: #ffffff;
+    width:540px;
+    box-shadow: 0 0 .875rem 0 rgba(33,37,41,.05);
+    padding:30px;
+    color:#1b1b1b;
+  }
+
+  .card{
+    height:80px;
+  }
+
+  .cardBox .card{
+    border-radius: 20px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    width:230px;
+    box-shadow: 0 0 .875rem 0 rgba(33,37,41,.05);
+    padding:30px;
+    color:#1b1b1b;
+    background-color: #ffffff;
+  }
+  
+  .cardBox .card .numbers{
+    font-weight: bold;
+    font-size: 25px;
+    text-align:center;
+    padding:10px;
+    font-family:'Calibri';
+    color: black;
+    }
+  
+    .cardBox .card  .cardName{
+      color: #007bff;
+      font-weight:bold;
+      font-size:15px;
+      text-align: center;
+    }
+
+    .cardBox .card .numbers i{
+      margin-right: 10px;
+    }
+
+  table {
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0 0 .875rem 0 rgba(33,37,41,.05);
+    height: 30%;
+    margin: 0 auto;
+  }
+
+
+  table th{
+    background-color:#393939;
+    color:#3b7ddd;;
+    padding:12px;
+    text-align: left;
+  }
+  
+  td{
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr{
+    background-color: #222222;
+    color: #7e7b72;
+  }
+
+ table tr:first-child th:first-child{
+    border-top-left-radius:12px;
+  }
+
+  table tr:first-child th:last-child{
+    border-top-right-radius:12px;
+  }
+
+  table tr:last-child td:first-child{
+    border-bottom-left-radius:12px;
+  }
+
+  table tr:last-child td:last-child{
+    border-bottom-right-radius:12px;
+  }
+
+  .rowBox{
+    display:flex;
+    flex-wrap:wrap;
+  }

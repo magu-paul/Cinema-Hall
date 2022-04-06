@@ -1,0 +1,162 @@
+body
+{
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	font-family: 'Jost', sans-serif;
+	min-height: 100vh;
+	align-items: center;
+}
+
+.main
+{
+	
+	background-color: rgb(68, 68, 68);
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+	
+}
+.main div{
+	justify-self: center;
+}
+
+#check
+{
+	display: none;
+}
+
+.registration
+{
+	position: relative;
+	width:100%;
+	height: 100%;
+	margin-top: -30px;
+}
+
+label
+{
+	color: rgb(255, 255, 255);
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+input
+{
+	width: 47%;
+	height: 20px;
+	background: #a7a7a7;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+input:focus
+{ 
+    outline:none;
+    border-color:#000000;
+    box-shadow:0 0 10px #000000;
+}
+
+#user
+{
+	background-image: url('user.png');
+	position: left;
+	background-position-x: -1px;
+	background-position-y: -5px;
+	padding-left: 55px;
+	background-size: 50px;
+	background-repeat: no-repeat;
+}
+
+#email
+{
+	background-image: url('email.png');
+	position: left;
+	background-position-x: -1px;
+	background-position-y: -5px;
+	padding-left: 55px;
+	background-size: 50px;
+	background-repeat: no-repeat;
+}
+
+#pass
+{
+	background-image: url('pass.png');
+	position: left;
+	background-position-x: -1px;
+	background-position-y: -5px;
+	padding-left: 55px;
+	background-size: 50px;
+	background-repeat: no-repeat;
+}
+
+button
+{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: rgb(255, 255, 255);
+	background: #000000;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+button:hover
+{
+	background: #252525;
+}
+
+.login
+{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+
+.login label
+{
+	color: #000000;
+	margin-top:100px;
+	transform: scale(.6);
+}
+
+#check:checked ~ .login
+{
+	transform: translateY(-500px);
+}
+
+#check:checked ~ .login label
+{
+	transform: scale(1);	
+}
+
+#check:checked ~ .registration label
+{
+	transform: scale(.6);
+	margin-top: 40px;
+}
+

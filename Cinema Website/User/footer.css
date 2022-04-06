@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:#ffffff;
+}
+
+body,html{
+    overflow-x:hidden;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container{
+    width:1200px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    padding:100px 0;
+    margin:-20px;
+    background-color:#1b1b1b;
+}
+
+.footer-col{
+    width:25%;
+    padding:0 15px;
+}
+
+.footer-col h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.line{
+    width:50px;
+    height:4px;
+    background-color: red;
+    position: absolute;
+    content:'';
+    transform: translateY(-25px);
+}
+
+#hide{
+    display:none;
+}
+i{margin-left:10px;}
+
+body{
+transition:margin-left .5s;
+padding:20px;
+}
+
+#logout:hover{
+color:red;
+text-decoration:underline;
+}
+
+.sidenav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#1b1b1b;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a{
+    padding:8px 40px 8px 40px;
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color:#fc007a;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top:0;
+    right:1px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn{
+    font-size: 35px;
+    cursor: pointer;
+    color:white;
+    background-color: transparent;
+    padding:15px;
+    border:none;
+    transition: 0.2s ease-in-out;
+}
